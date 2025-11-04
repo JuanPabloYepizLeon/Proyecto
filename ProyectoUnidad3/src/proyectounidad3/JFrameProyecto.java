@@ -57,7 +57,8 @@ public class JFrameProyecto extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         txtExpresionRegular = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Validación y Análisis de Archivos");
@@ -219,8 +220,11 @@ public class JFrameProyecto extends javax.swing.JFrame {
 
         btnBuscar.setText("Buscar");
 
-        jTextField2.setEditable(false);
-        jTextField2.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultados"));
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jTextArea3.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultados"));
+        jScrollPane4.setViewportView(jTextArea3);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -238,9 +242,9 @@ public class JFrameProyecto extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnBuscar))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 752, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 742, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,9 +255,9 @@ public class JFrameProyecto extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(txtExpresionRegular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnBuscar))
-                .addGap(18, 18, 18)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
 
         jTabbedPane1.addTab("Leer Carpeta", jPanel3);
@@ -334,10 +338,11 @@ public class JFrameProyecto extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextField txtCURP;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtExpresionRegular;
